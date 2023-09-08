@@ -8,7 +8,8 @@ public class PigLatin {
         String phrase;
         int len;
         System.out.println("Give a Word");
-        Scanner phrase = new Scanner(System.in)
+        Scanner scan = new Scanner(System.in);
+        phrase = scan.nextLine(System.in);
         len = phrase.length();
         for (int i = 0; i<len; i++){
             phrase.substring(i, i+1); // up to but not including i + 1
