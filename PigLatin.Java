@@ -17,6 +17,6 @@ public class PigLatin {
             temp = temp + phrase.substring(i, i+1);
         }
         temp = temp + phrase.substring(0, 1) + "ay";
-        System.out.print("Give a Word");
+        System.out.print("Your Word is " + temp);
     }
 }
