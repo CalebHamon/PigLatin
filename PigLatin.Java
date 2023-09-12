@@ -7,16 +7,26 @@ public class PigLatin {
         //prompt user for word
         String phrase;
         int len;
+        int nel;
+        String fiword = "";
         System.out.println("Give a Word");
         Scanner scan = new Scanner(System.in);
         phrase = scan.nextLine();
-        len = phrase.length();
+        String[] words = phrase.split(" ");
         String temp = "";
-        for (int i = 1; i<len; i++){
-            phrase.substring(i, i+1); // up to but not including i + 1
-            temp = temp + phrase.substring(i, i+1);
+        for (int p = 0; p > 0; p++) {
+            if (words[p] == null) {
+                len = p;
+                p = -1;
+            }
+            len = 0;
         }
-        temp = temp + phrase.substring(0, 1) + "ay";
-        System.out.print("Your Word is " + temp);
+        for (int i = 0; i<len; i++){
+            temp = words[i];
+            nel = temp.length();
+            temp = temp.substring(1,nel) + temp.substring(0,1) + "ay";
+            fiword = fiword + temp + " ";
+        }
+        System.out.print("Your Word is " + fiword);
     }
 }
