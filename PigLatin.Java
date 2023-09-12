@@ -11,8 +11,11 @@ public class PigLatin {
         Scanner scan = new Scanner(System.in);
         phrase = scan.nextLine();
         len = phrase.length();
+        String temp;
         for (int i = 0; i<len; i++){
             phrase.substring(i, i+1); // up to but not including i + 1
+            temp = phrase.substring(i + 1, len) +
+            
         }
     }
 }
