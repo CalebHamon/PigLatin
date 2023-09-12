@@ -9,7 +9,7 @@ public class PigLatin {
         int len;
         System.out.println("Give a Word");
         Scanner scan = new Scanner(System.in);
-        phrase = scan.nextLine(System.in);
+        phrase = scan.nextLine();
         len = phrase.length();
         for (int i = 0; i<len; i++){
             phrase.substring(i, i+1); // up to but not including i + 1
